@@ -31,3 +31,15 @@ COB("Utility", {
     end,
     HoverText = false
 })
+        
+COB("Utility", {
+    Name = "ClientCrasher",
+    Function = function(callback) 
+        if callback then
+            pcall(function() 
+                print("No bitches")
+            end) 
+        end
+    end,
+    HoverText = false
+})
