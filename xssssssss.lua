@@ -19,3 +19,15 @@ COB("Utility", {
     end,
     HoverText = false
 })
+    
+COB("Utility", {
+    Name = "AntiCrash",
+    Function = function(callback) 
+        if callback then
+            pcall(function() 
+                shared.Invis(game.Players.LocalPlayer) 
+            end) 
+        end
+    end,
+    HoverText = false
+})
